@@ -37,7 +37,7 @@ public class LargestSubStringLength {
         int n = s.length();
         Map<Character,Integer> map = new HashMap<>();
         int ans = 0;
-        for(int windowStart = 0 ,windowEnd =0; windowEnd< n ; windowEnd++){
+        for(int windowStart = 0 ,windowEnd  =0; windowEnd< n ; windowEnd++){
             if(map.containsKey(s.charAt(windowEnd))){
                 windowStart = Math.max(map.get(s.charAt(windowEnd)),windowStart);
             }
